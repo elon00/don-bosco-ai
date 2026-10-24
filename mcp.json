@@ -1,10 +1,34 @@
 {
-  "name": "weldx",
-  "ticker": "WELD",
-  "category": "BTCfi_BitcoinL2",
+  "name": "don-bosco-ai-mcp",
+  "version": "1.0.0",
+  "description": "Don Bosco AI Model Context Protocol Server for Preventive Pedagogical Intelligence, Youth Accompaniment & Vocational Empowerment",
   "tools": [
-    { "name": "query_conway_state", "description": "Fetches current cellular automaton lattice" },
-    { "name": "execute_x402_settlement", "description": "Executes HTTP 402 micro-settlement" },
-    { "name": "fetch_quicknode_rpc", "description": "Queries QuickNode multi-chain endpoint" }
+    {
+      "name": "evaluate_preventive_pedagogy",
+      "description": "Audit youth interactions and educational systems against Don Bosco's Preventive Triad (Reason, Spirituality, Loving-Kindness) and Active Accompaniment",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "interaction_context": { "type": "string" },
+          "pedagogy_mode": { "type": "string", "enum": ["reason", "spirituality", "loving_kindness", "holistic_oratory"] },
+          "student_risk_profile": { "type": "string" }
+        },
+        "required": ["interaction_context", "pedagogy_mode"]
+      }
+    },
+    {
+      "name": "disburse_youth_scholarship",
+      "description": "Trigger a zero-leakage vocational micro-scholarship or apprenticeship tool grant for underprivileged youth",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "program_type": { "type": "string" },
+          "apprentice_address": { "type": "string" },
+          "amount_wei": { "type": "string" },
+          "certification_hash": { "type": "string" }
+        },
+        "required": ["program_type", "apprentice_address", "amount_wei"]
+      }
+    }
   ]
 }
